@@ -10,7 +10,4 @@ clean:
 	@rm *.so
 
 test:
-	@echo "$$PWD"
-	@export LD_LIBRARY_PATH="$$PWD/lib"
-	@echo "$$LD_LIBRARY_PATH"
-	@perl p.pl
+	@LD_LIBRARY_PATH="$$PWD/lib" perl p.pl
